@@ -1,6 +1,6 @@
 [
     {
-        "question": "Quanto é 10 + 20?",
+        "title": "Quanto é 10 + 20?",
         "answers": [
             { 
                 "alternative": "40", 
@@ -25,7 +25,7 @@
         ]
     },
     {
-        "question": "Quanto é 100 + 15?",
+        "title": "Quanto é 100 + 15?",
         "answers": [
             { 
                 "alternative": "115", 
@@ -50,7 +50,7 @@
         ]
     },
     {
-        "question": "Quanto é 90 - 25?",
+        "title": "Quanto é 90 - 25?",
         "answers": [
             { 
                 "alternative": "45", 
@@ -75,7 +75,7 @@
         ]
     },
     {
-        "question": "Quanto é 21 - 3?",
+        "title": "Quanto é 21 - 3?",
         "answers": [
             { 
                 "alternative": "16", 
@@ -100,7 +100,7 @@
         ]
     },
     {
-        "question": "Quanto é 500 - 150?",
+        "title": "Quanto é 500 - 150?",
         "answers": [
             { 
                 "alternative": "450", 
