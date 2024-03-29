@@ -1,15 +1,47 @@
 import questionsData from "../data/questions.json" assert { type: "json" };
 
+const quizContainer = document.querySelector("#quiz-container");
 const question = document.querySelector(".question");
 const answersContainer = document.querySelector(".answers-container");
 const feedback = document.querySelector(".feedback");
 const totalPoints = document.querySelector(".points");
+const nextButton = document.querySelector(".next-question");
 
 let questionIndex = 0;
 let score = 0;
 let questionAnswered = false;
 
+nextButton.addEventListener("click", showNextQuestion);
+
+function showNextQuestion () {
+
+    if (questionIndex < questionsData.length - 1) {
+        questionIndex++;
+        showQuestion();
+    }else{
+        finishQuiz();
+    }
+}
+
+function finishQuiz () {
+    question.classList.add("hide");
+    answersContainer.classList.add("hide");
+    feedback.classList.add("hide");
+    nextButton.classList.add("hide");
+
+    const span = document.createElement("span");
+    span.classList.add("end-quiz");
+    span.textContent = `
+        Parabéns!
+        Você concluiu todas as perguntas.
+    `
+    quizContainer.appendChild(span);
+
+    console.log("Fim de jogo");
+}
+
 function showFeedback (event) {
+
     let isCorrectAnswer = event.target.getAttribute("data-correct");
     
     if (isCorrectAnswer === "false") {
@@ -46,6 +78,7 @@ function showScore (isCorrect, questionAnswered) {
 
 function showQuestion () {
     const currentQuestion = questionsData[questionIndex];
+    answersContainer.innerHTML = "";
     question.innerHTML = currentQuestion.title;
 
     currentQuestion.answers.forEach(item => {
