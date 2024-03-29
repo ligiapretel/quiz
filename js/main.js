@@ -14,6 +14,8 @@ let questionAnswered = false;
 nextButton.addEventListener("click", showNextQuestion);
 
 function showNextQuestion () {
+    questionAnswered = false;
+    feedback.textContent = "";
 
     if (questionIndex < questionsData.length - 1) {
         questionIndex++;
@@ -36,8 +38,6 @@ function finishQuiz () {
         Você concluiu todas as perguntas.
     `
     quizContainer.appendChild(span);
-
-    console.log("Fim de jogo");
 }
 
 function showFeedback (event) {
