@@ -103,3 +103,7 @@ h1 {
 .hide {
     display: none;
 }
+
+.alternative-focus {
+    outline: 2px solid rgb(43, 35, 79);
+}

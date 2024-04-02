@@ -42,6 +42,10 @@ function finishQuiz () {
 
 function showFeedback (event) {
 
+    const span = event.target;
+
+    console.log(span);
+
     let isCorrectAnswer = event.target.getAttribute("data-correct");
     
     if (isCorrectAnswer === "false") {
@@ -85,17 +89,21 @@ function showQuestion () {
         const span = document.createElement("span");
         
         span.classList.add("alternative");
-
         span.setAttribute("data-correct",item.isCorrect);
-        
+        span.setAttribute("tabindex","0");        
         span.innerHTML = item.alternative;
         
         answersContainer.appendChild(span);
 
+    });
+
         const alternatives = document.querySelectorAll(".alternative");
 
-        alternatives.forEach(item => item.addEventListener("click", showFeedback));
-    })
+        alternatives.forEach(item => {
+            item.addEventListener("click", showFeedback);
+            item.addEventListener("focus", () => item.classList.add("alternative-focus"));
+            item.addEventListener("blur", () => item.classList.remove("alternative-focus"));
+        })
 }
 
 showQuestion();
