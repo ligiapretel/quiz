@@ -167,6 +167,7 @@ function finishQuiz () {
 }
 
 function showFeedback (event) {
+    if (questionAnswered) return;
 
     let isCorrectAnswer = event.target.getAttribute("data-correct");
     
@@ -174,6 +175,9 @@ function showFeedback (event) {
         feedback.classList.remove("correct");
         feedback.classList.add("incorrect");
         feedback.textContent = "Resposta incorreta";
+
+        questionAnswered = true;
+        disableAlternatives();
         
         return false;
     }
@@ -185,6 +189,7 @@ function showFeedback (event) {
     let rightAnswer = true;
     showScore(rightAnswer, questionAnswered);
     questionAnswered = true;
+    disableAlternatives()
     
     return true;
     
@@ -197,9 +202,20 @@ function showScore (isCorrect, questionAnswered) {
     if (isCorrect && !questionAnswered) {
         score = score + pointsEarned;
         totalPoints.textContent = `${score} ponto(s)`;
+
         return true;
     }
+
     return totalPoints.textContent = `${score} ponto(s)`;
+}
+
+function disableAlternatives() {
+    const alternatives = document.querySelectorAll(".alternative");
+    alternatives.forEach(alternative => {
+        alternative.removeEventListener("click", showFeedback);
+        alternative.classList.remove("alternative");
+        alternative.classList.add("disabled");
+    });
 }
 
 function showQuestion () {
