@@ -38,6 +38,7 @@ h1 {
  font-size: 1.2rem;
  font-weight: bold;
  color: rgb(43, 35, 79);
+ text-align: center;
 }
 
 .answers-container{
@@ -51,9 +52,10 @@ h1 {
     color: #fff;
     background-color: rgb(133, 110, 235);
     border-radius: 1.5rem;
-    width: 19rem;
+    width: 20rem;
     padding: 0.8rem 0;
     cursor: pointer;
+    font-size: 0.9rem;
 }
 
 .answers-container > .alternative:hover {
@@ -113,9 +115,10 @@ h1 {
     color: #565656;
     background-color: rgb(207, 207, 207);
     border-radius: 1.5rem;
-    width: 19rem;
+    width: 20rem;
     padding: 0.8rem 0;
     pointer-events: none;
+    font-size: 0.9rem;
 }
 
 @media screen and (min-width: 577px) {
@@ -130,6 +133,7 @@ h1 {
 
     .answers-container > .alternative {
         width: 25rem;
+        font-size: 1rem;
     }
 
     .next-question {
@@ -142,5 +146,6 @@ h1 {
 
     .disabled {
        width: 25rem;
+       font-size: 1rem;
     }
 }

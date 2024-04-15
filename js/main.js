@@ -1,125 +1,125 @@
 const questionsData = [
     {
-        "title": "Quanto é 10 + 20?",
+        "title": "Quais os 3 pilares da tríade CIA?",
         "answers": [
             { 
-                "alternative": "40", 
+                "alternative": "Conscientização, integração e absorção", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "30", 
+                "alternative": "Confidencialidade, integridade e disponibilidade", 
                 "isCorrect": true 
             },
             { 
-                "alternative": "60", 
+                "alternative": "Contramedidas, inovação e automação", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "70", 
+                "alternative": "Cibersegurança, informática e advocacia", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "80", 
+                "alternative": "Crescimento, intensidade e armazenamento", 
                 "isCorrect": false 
             }
         ]
     },
     {
-        "title": "Quanto é 100 + 15?",
+        "title": "Que tipo de malware pode se replicar e ser executado de forma independente?",
         "answers": [
             { 
-                "alternative": "115", 
+                "alternative": "Worms", 
                 "isCorrect": true 
             },
             { 
-                "alternative": "125", 
+                "alternative": "Cavalo de tróia", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "105", 
+                "alternative": "Vírus", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "120", 
+                "alternative": "Ramsonware", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "130", 
+                "alternative": "Bomba lógica", 
                 "isCorrect": false 
             }
         ]
     },
     {
-        "title": "Quanto é 90 - 25?",
+        "title": "Ataques de negação de serviço (DoS) são um tipo de ataque de...?",
         "answers": [
             { 
-                "alternative": "45", 
+                "alternative": "Phishing", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "75", 
+                "alternative": "Spam", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "85", 
+                "alternative": "Engenharia social", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "60", 
+                "alternative": "Malware", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "65", 
+                "alternative": "Rede", 
                 "isCorrect": true 
             }
         ]
     },
     {
-        "title": "Quanto é 21 - 3?",
+        "title": "Que tipo de ataque explora vulnerabilidades de software desconhecidas por seu fornecedor?",
         "answers": [
             { 
-                "alternative": "16", 
+                "alternative": "Bluejacking", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "15", 
+                "alternative": "Vishing", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "17", 
+                "alternative": "DDos", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "19", 
+                "alternative": "Main-in-the-middle", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "18", 
+                "alternative": "Zero Day", 
                 "isCorrect": true 
             }
         ]
     },
     {
-        "title": "Quanto é 500 - 150?",
+        "title": "Qual a nomenclatura dada a hackers que utilizam suas competências para fins éticos e legais?",
         "answers": [
             { 
-                "alternative": "450", 
+                "alternative": "Hackers de chapéu cinzento", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "650", 
+                "alternative": "Hackers de chapéu marrom", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "350", 
+                "alternative": "Hackers de chapéu branco", 
                 "isCorrect": true 
             },
             { 
-                "alternative": "250", 
+                "alternative": "Hackers de chapéu preto", 
                 "isCorrect": false 
             },
             { 
-                "alternative": "550", 
+                "alternative": "Hackers de chapéu azul", 
                 "isCorrect": false 
             }
         ]
